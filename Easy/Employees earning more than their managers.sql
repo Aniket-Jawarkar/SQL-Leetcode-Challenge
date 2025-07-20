@@ -20,6 +20,3 @@
 -- +----------+
 
 -- Solution
-select a.Name as Employee
-from employee a, employee b
-where a.salary>b.salary and a.managerid=b.id

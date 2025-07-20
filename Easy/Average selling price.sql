@@ -65,11 +65,3 @@
 -- Average selling price for product 2 = ((200 * 15) + (30 * 30)) / 230 = 16.96
 
 -- Solution
-Select d.product_id, round((sum(price*units)+0.00)/(sum(units)+0.00),2) as average_price
-from(
-Select *
-from prices p
-natural join 
-unitssold u
-where u.purchase_date between p.start_date and p.end_date) d
-group by d.product_id 

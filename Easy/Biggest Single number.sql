@@ -22,11 +22,3 @@
 -- If there is no such number, just output null.
 
 -- Solution
-Select max(a.num) as num
-from 
-( 
-    select num, count(*)
-    from my_numbers
-    group by num
-    having count(*)=1
-) a

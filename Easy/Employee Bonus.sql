@@ -33,7 +33,3 @@
 
 
 -- Solution
-Select E.name, B.bonus
-From Employee E left join Bonus B
-on E.empId = B.empId
-where B.bonus< 1000 or B.Bonus IS NULL
